@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topnav">
+        <a href = "file:///C:/Users/yongqiyu928/Documents/Software_HW/HW1/mypage_bootstrap.html"> Home </a>
+      </div>
+      <h1> Add New Interest </h1>
+      <form>
+        <div class="form-group">
+          <label for="interest">Interest Name</label>
+          <input type ="text" class = "form-control" id = "interest" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="comment">Text About Interest</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+
+          <div class = "row">
+            <div class = "col">
+              <p> Upload Local Image: </p>
+              <input type="file" id = "myFile">
+            </div>
+            <div class = "col">
+              <p> Select # Tweets to Display: </p>
+              <input list = "number" placeholder="#">
+              <datalist id="number">
+                <option value ="1">
+                <option value ="2">
+                <option value ="3">
+              </datalist>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class = "col">
+              <p> On a scale of 1-5, how interested in this are you? </p>
+              <input type="checkbox" id="num1">
+              <label for="num1"> 1 </label>
+              <input type="checkbox" id="num2">
+              <label for="num2"> 2 </label>
+              <input type="checkbox" id="num3">
+              <label for="num3"> 3 </label>
+              <input type="checkbox" id="num4">
+              <label for="num4"> 4 </label>
+              <input type="checkbox" id="num5">
+              <label for="num5"> 5 </label>
+            </div>
+          </div>
+
+        <p> Login to Finish Submitting </p>
+        <div class="row">
+          <div class="col">
+            <input type="text" class = "form-control" id = "username" placeholder="Username">
+          </div>
+          <div class="col">
+            <input type="password" class = "form-control" id = "password" placeholder="Password">
+          </div>
+        </div>
+        <br>
+        <input type="submit">
+      </form>
+
+
+    </div>
+  </body>
+</html>
